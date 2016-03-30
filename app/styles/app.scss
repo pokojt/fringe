@@ -1,0 +1,22 @@
+//==============================================
+// GLOBAL IMPORTS
+//==============================================
+
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+
+@import 'utils/index';
+@import 'base/index';
+@import 'layout/index';
+@import 'components/index';
+
+
+
+.postImage {
+  width: 350px;
+  height: 150px;
+}
+
+// h1 {
+//   color: green !important;
+// }
