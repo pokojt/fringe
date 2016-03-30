@@ -13,6 +13,7 @@ export default Ember.Route.extend({
       var newPost = this.store.createRecord('post', formInputs);
       newPost.save();
       this.transitionTo('admin');
+      component.reset();
       console.log(formInputs);
     }
   }
