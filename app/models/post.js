@@ -6,5 +6,6 @@ export default DS.Model.extend({
   image: DS.attr(),
   author: DS.attr(),
   content: DS.attr(),
-  category: DS.attr()
+  category: DS.attr(),
+  summary: DS.attr()
 });
