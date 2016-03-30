@@ -8,6 +8,12 @@ export default Ember.Route.extend({
     destroyPost(post){
       post.destroyRecord();
       this.transitionTo('admin');
+    },
+    savePost(formInputs) {
+      var newPost = this.store.createRecord('post', formInputs);
+      newPost.save();
+      this.transitionTo('admin');
+      console.log(formInputs);
     }
   }
 });
