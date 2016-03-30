@@ -1,12 +1,16 @@
-<div class="jumbotron">
-  <div class="container">
-    <h1>FRINGE</h1>
+<div class="background">
+  <div class="nav">
+    <div class="logo">{{#link-to 'index'}}HOME{{/link-to}}</div>
+    <div class="links">
       {{#link-to 'admin'}}ADMIN{{/link-to}}
       {{#link-to 'about'}}ABOUT{{/link-to}}
       {{#link-to 'contact'}}CONTACT{{/link-to}}
-      {{#link-to 'index'}}HOME{{/link-to}}
+    </div>
   </div>
-</div>
-<div class="container">
-  {{liquid-outlet}}
+  <div class="header">
+      <h1>FRINGE</h1>
+  </div>
+  <div class="container">
+    {{liquid-outlet}}
+  </div>
 </div>

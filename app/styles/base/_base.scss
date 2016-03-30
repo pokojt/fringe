@@ -14,14 +14,20 @@ html, body {
   margin: 0px;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.background {
+  background-image: linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url("/img/burning-man.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 
 /**
  * Basic styles for links
  */
 a {
   text-decoration: none;
-}
-
-h1 {
-  color: purple !important;
 }
