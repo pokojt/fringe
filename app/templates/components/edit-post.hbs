@@ -4,23 +4,23 @@
   <form class="editPostForm">
     <div class="form-group">
       <label for="title">Post Title</label>
-      {{input value=title id="title" placeholder=post.title}}
+      {{input value=post.title id="title" placeholder=post.title}}
     </div>
     <div class="form-group">
       <label for="author">Author</label>
-      {{input value=author id="author" placeholder=post.author}}
+      {{input value=post.author id="author" placeholder=post.author}}
     </div>
     <div class="form-group">
       <label for="category">Category</label>
-      {{input value=category id="category" placeholder=post.category}}
+      {{input value=post.category id="category" placeholder=post.category}}
     </div>
     <div class="form-group">
       <label for="image">Image URL</label>
-      {{input value=image id="image" placeholder=post.image}}
+      {{input value=post.image id="image" placeholder=post.image}}
     </div>
     <div class="form-group">
       <label for="summary">Summary</label>
-      {{textarea value=summary id="summary" placeholder=post.summary}}
+      {{textarea value=post.summary id="summary" placeholder=post.summary}}
     </div>
     <div class="form-group">
       <label for="content">Main Content</label>
@@ -28,7 +28,7 @@
     </div>
     <div class="form-group">
       <label for="date">Event Date</label>
-      {{input value=date id="date" placeholder=post.date}}
+      {{input value=post.date id="date" placeholder=post.date}}
     </div>
     <button {{action 'editPost' post}}>Save Edits</button>
   </form>
