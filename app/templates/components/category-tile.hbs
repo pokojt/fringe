@@ -2,8 +2,17 @@
 
 <ul>
 {{#each category.posts as |post|}}
-  <li>{{post.title}}</li>
+  <div class="postItem">
+    <div class="postImage" style="background-image: url('{{post.image}}');">
+    </div>
+    <h2>{{post.title}}</h2>
+    <h3>{{post.author}}</h3>
+    {{edit-post post=post editPost="editPost"}}
+    <button {{action 'delete' post}}>Delete Post</button>
+    <hr>
+  </div>
 {{/each}}
 </ul>
 
-<!-- {{admin-post-tile post=post destroyPost="destroyPost" editPost="editPost"}} -->
+<!--
+{{admin-post-tile post=post destroyPost="destroyPost" editPost="editPost"}} -->

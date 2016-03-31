@@ -14,6 +14,19 @@ export default Ember.Route.extend({
       });
       console.log(formInputs.category.get('id'));
       this.transitionTo('category', category);
+    },
+    destroyPost(post){
+      post.destroyRecord();
+      this.transitionTo('category');
+    },
+    editPost(post, editFormInputs){
+      Object.keys(editFormInputs).forEach(function(key) {
+        if(editFormInputs[key]!==undefined) {
+          post.set(key, editFormInputs[key] );
+        }
+      });
+      post.save();
+      this.transitionTo('category');
     }
   }
 });
