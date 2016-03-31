@@ -16,15 +16,13 @@ export default Ember.Component.extend({
         date: this.get('date') ? this.get('date'): "",
     };
       this.toggleProperty('showForm');
+      this.set('title', " ");
+      this.set('author', " ");
+      this.set('image', " ");
+      this.set('summary', " ");
+      this.set('content', " ");
+      this.set('date', " ");
       this.sendAction('savePost', formInputs);
     }
   }
 });
-
-// this.set('title', " ");
-// this.set('author', " ");
-// this.set('category', " ");
-// this.set('image', " ");
-// this.set('summary', " ");
-// this.set('content', " ");
-// this.set('date', " ");
