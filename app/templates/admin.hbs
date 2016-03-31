@@ -4,14 +4,17 @@
 
 {{new-post savePost="savePost"}} -->
 
-<h1>HEY.</h1>
+<h1>Admin</h1>
+<h3 class="view">View, edit, and delete posts in each category.</h3>
 
-<ul>
+<div class="categoryList">
   {{#each model as |category|}}
-    <li>{{#link-to 'category' category.id}}{{category.name}}{{/link-to}}
-      {{edit-category category=category editCategory="editCategory"}}
-    </li>
+  <div class="categoryItem">
+    {{#link-to 'category' category.id}}{{category.name}}{{/link-to}}
+    {{edit-category category=category editCategory="editCategory"}}
+  </div>
   {{/each}}
-</ul>
+</div>
+
 
 {{new-category category=category saveCategory="saveCategory"}}

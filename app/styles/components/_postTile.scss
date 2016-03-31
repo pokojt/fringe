@@ -76,10 +76,17 @@
   }
 }
 
-.addNew {
+.addNew, .addNew2 {
   padding: 10px 30px;
   margin-top: 25px;
+  border: none;
+  transition: all 500ms linear;
+  &:hover {
+    background-color: aquamarine;
+    transition: all 500ms linear;
+  }
 }
+
 
 .categoryHeader {
   color: white;

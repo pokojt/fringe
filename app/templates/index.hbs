@@ -1,12 +1,13 @@
 <div class="header">
-    <h1>FRINGE</h1>
+    <h1>Fringe</h1>
+    <i class="fa fa-chevron-down"></i>
 </div>
 
 {{#each model.categories as |category|}}
 <li>{{#link-to 'category' category.id}}{{category.name}}{{/link-to}}</li>
 {{/each}}
 
-<div class="postList">  
+<div class="postList">
   {{#each model as |post|}}
     {{post-tile post=post}}
   {{/each}}

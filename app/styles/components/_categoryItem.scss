@@ -1,0 +1,19 @@
+.categoryItem {
+  margin-bottom: 2%;
+  a {
+    font-size: 30px;
+    color: white;
+    letter-spacing: 1px;
+    transition: all 500ms linear;
+    &:hover {
+      transition: all 500ms linear;
+      color: aquamarine;
+      letter-spacing: 3px;
+      text-decoration: none;
+    }
+  }
+}
+
+.view {
+  color: white;
+}
