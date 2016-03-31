@@ -2,16 +2,17 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(){
-    return this.store.findAll('post');
+    // return this.store.findAll('post');
+    return this.store.findAll('category');
   },
   actions: {
     destroyPost(post){
       post.destroyRecord();
       this.transitionTo('admin');
     },
-    savePost(formInputs) {
-      var newPost = this.store.createRecord('post', formInputs);
-      newPost.save();
+    saveCategory(formInputs) {
+      var newCategory = this.store.createRecord('category', formInputs);
+      newCategory.save();
       this.transitionTo('admin');
     },
     editPost(post, editFormInputs){

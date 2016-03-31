@@ -12,10 +12,18 @@
 html, body {
   padding: 0px;
   margin: 0px;
+  color: white;
 }
 
 body::-webkit-scrollbar {
   display: none;
+}
+button {
+  color: black;
+}
+
+input, textarea {
+  color: black;
 }
 
 .background {

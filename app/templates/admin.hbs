@@ -1,5 +1,16 @@
-{{#each model as |post|}}
+<!-- {{#each model.posts as |post|}}
   {{admin-post-tile post=post destroyPost="destroyPost" editPost="editPost"}}
 {{/each}}
 
-{{new-post savePost="savePost"}}
+{{new-post savePost="savePost"}} -->
+
+<h1>HEY.</h1>
+
+<ul>
+  {{#each model as |category|}}
+  <!-- {{debugger}} -->
+    <li>{{#link-to 'category' category.id}}{{category.name}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+
+{{new-category saveCategory="saveCategory"}}
