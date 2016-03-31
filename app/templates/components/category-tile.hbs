@@ -1,4 +1,9 @@
-<h2>{{category.name}}</h2>
-<p>words!</p>
+<h3>{{category.name}} Posts</h3>
 
-<!-- For each loop to show all the posts in this category -->
+<ul>
+{{#each category.posts as |post|}}
+  <li>{{post.title}}</li>
+{{/each}}
+</ul>
+
+<!-- {{admin-post-tile post=post destroyPost="destroyPost" editPost="editPost"}} -->

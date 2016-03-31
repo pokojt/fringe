@@ -12,7 +12,8 @@ export default Ember.Route.extend({
       newPost.save().then(function() {
         return category.save();
       });
-      this.transitionTo('category', formInputs.category);
+      console.log(formInputs.category.get('id'));
+      this.transitionTo('category', category);
     }
   }
 });

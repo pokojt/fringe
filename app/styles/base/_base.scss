@@ -26,6 +26,10 @@ input, textarea {
   color: black;
 }
 
+.bottomBtn {
+  margin-bottom: 250px;
+}
+
 .background {
   background-image: linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url("/img/burning-man.jpg");
   background-size: cover;

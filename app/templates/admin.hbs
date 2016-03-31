@@ -8,7 +8,6 @@
 
 <ul>
   {{#each model as |category|}}
-  <!-- {{debugger}} -->
     <li>{{#link-to 'category' category.id}}{{category.name}}{{/link-to}}</li>
   {{/each}}
 </ul>

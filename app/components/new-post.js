@@ -9,7 +9,7 @@ export default Ember.Component.extend({
       var formInputs = {
         title: this.get('title') ? this.get('title'): "",
         author: this.get('author') ? this.get('author'): "",
-        category: this.get('category') ? this.get('category'): "",
+        category: this.get('category'),
         image: this.get('image') ? this.get('image'): "",
         summary: this.get('summary') ? this.get('summary'): "",
         content: this.get('content') ? this.get('content'): "",
