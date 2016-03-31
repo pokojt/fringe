@@ -13,7 +13,7 @@ export default Ember.Route.extend({
         return category.save();
       });
       console.log(formInputs.category.get('id'));
-      this.transitionTo('category', category);
+      this.transitionTo('category', formInputs.category);
     },
     destroyPost(post){
       post.destroyRecord();

@@ -12,12 +12,19 @@
 html, body {
   padding: 0px;
   margin: 0px;
-  color: white;
 }
 
 body::-webkit-scrollbar {
   display: none;
 }
+
+body {
+  background-image: linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url("/img/burning-man.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 button {
   color: black;
 }
@@ -26,16 +33,10 @@ input, textarea {
   color: black;
 }
 
-.bottomBtn {
-  margin-bottom: 250px;
+h1 {
+  color: white;
 }
 
-.background {
-  background-image: linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url("/img/burning-man.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
 
 /**
  * Basic styles for links

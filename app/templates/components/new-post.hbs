@@ -28,10 +28,10 @@
     </div>
     <button {{action 'savePost'}}>Create Post</button>
   </form>
-  <button class="bottomBtn" {{action 'toggleDetail'}}>Cancel</button>
+  <button{{action 'toggleDetail'}}>Cancel</button>
 </div>
 {{else}}
   <div class="createPostSection">
-    <button class="bottomBtn" {{action 'toggleDetail'}}>Add New Article</button>
+    <button class="addNew" {{action 'toggleDetail'}}>Add New Article</button>
   </div>
 {{/liquid-if}}

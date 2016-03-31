@@ -1,9 +1,10 @@
 <div class="postItem">
-  {{#link-to 'post' post.id}}<div class="postImage" style="background-image: url('{{post.image}}');">
+  {{#link-to 'post' post.id}}<div class="postImage" style="background: url('{{post.image}}') no-repeat; background-size: cover;">
   </div>{{/link-to}}
-  <h4>{{post.category.name}}</h4>
-  <h2>{{post.title}}</h2>
-  <h3>{{post.author}} | {{post.date}}</h3>
-  <p>{{post.summary}}</p>
-  <hr>
+  <div class="postContent">
+    <p class="category">{{post.category.name}}</p>
+    <h2 class="title">{{post.title}}</h2>
+    <p class="authorDate">{{post.author}} <span class="space">|</span>{{post.date}}</p>
+    <p class="summary">{{post.summary}}</p>
+  </div>
 </div>

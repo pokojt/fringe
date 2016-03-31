@@ -1,0 +1,99 @@
+.postList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  > .ember-view {
+    width: 48%;
+    margin: 2% 0px;
+  }
+}
+
+.postItem {
+  flex: 1;
+  background-color: rgba(255,255,255,0.6);
+  // height: 400px;
+  .postImage {
+    height: 250px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .postContent {
+    padding: 2%;
+  }
+  .category {
+    color: white;
+    position: relative;
+    left: 2%;
+    bottom: 245px;
+    font-size: 14px;
+    text-shadow: 1px 1px 1px black;
+    letter-spacing: 1px;
+  }
+  .title {
+    margin-top: -25px;
+  }
+  .authorDate {
+    margin-top: -10px;
+    letter-spacing: 1px;
+  }
+  .space {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .summary {
+    letter-spacing: 1px;
+  }
+}
+
+.categoryPostList {
+  display: flex;
+  justify-content: space-between;
+  .categoryPostItem {
+    background-color: rgba(255,255,255,0.6);
+    width: 30%;
+    .categoryPostImage {
+      height: 250px;
+    }
+    .categoryPostContent {
+      padding: 2%;
+      .postBtns {
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.createPostSection {
+  h2 {
+    color: white;
+  }
+  button {
+    margin-bottom: 20px;
+  }
+}
+
+.addNew {
+  padding: 10px 30px;
+  margin-top: 25px;
+}
+
+.categoryHeader {
+  color: white;
+}
+
+label {
+  color: white;
+}
+
+.postDetailImage {
+  height: 700px;
+  margin-top: 50px;
+}
+
+.postDetailContent {
+  padding: 2%;
+}
